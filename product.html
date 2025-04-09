@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+        <script src="script.js"></script>
+        <script src="login-script.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <nav class="nav-header">
+                    <div class="head-logo">
+                        <h1>Ecommerce</h1>
+                    </div>
+                    <div class="nav-list">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-btn">
+                        <ul>                        
+                            <li>
+                                <button onclick="buttonAction('login',event)" id="btn-login">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                    </Span>
+                                    Login
+                                </button> </li>
+                            <li>
+                                <button  onclick="buttonAction('register',event)" id="btn-reg">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </Span>
+                                    Register
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="buttonAction('cart',event)" id="btn-cart">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </Span>
+                                    Cart <span id="cart-count"></span>
+                                </button>
+                            </li>
+                        </ul>    
+                    </div>                    
+                </nav>
+           </header>
+           <!---Header End-->     
+
+           <!--Latest products start-->
+
+            <div class="latest-products">
+                <div class="latest-products-head">
+                    <p>Latest Products</p>
+
+                </div>
+
+                <div class="latest-products-btn">
+                    <button onclick="buttonFilter('',event)">All</button>
+                    <button onclick="buttonFilter(`men's clothing`,event)">Men's Clothing</button>
+                    <button onclick="buttonFilter(`women's clothing`, event)">Women's Clothing</button>
+                    <button onclick="buttonFilter('jewelery',event)">Jewelery</button>
+                    <button onclick="buttonFilter('electronics',event)">Electronics</button>
+                </div>
+           </div>
+           <!--Latest products start-->
+           <div class="latest-products-cart">
+            
+           </div>
+           <!--Latest products end-->
+
+
+           <footer>
+                <div class="footer">
+                    <p>Made with <i class="fa-solid fa-heart" style="color: red;"></i> by vidya from <a href="https://www.achieversit.com" target="_blank">AchieversIT</a></p>
+                </div>
+           </footer>
+
+        </div>
+    </body>
+</html>
