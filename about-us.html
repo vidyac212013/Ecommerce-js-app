@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+        <!--script src="aboutus-script.js"></script-->
+        <script src="login-script.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <nav class="nav-header">
+                    <div class="head-logo">
+                        <h1>Ecommerce</h1>
+                    </div>
+                    <div class="nav-list">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-btn">
+                        <ul>                        
+                            <li>
+                                <button onclick="buttonAction('login',event)" id="btn-login">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                    </Span>
+                                    Login
+                                </button> </li>
+                            <li>
+                                <button  onclick="buttonAction('register',event)" id="btn-reg">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </Span>
+                                    Register
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="buttonAction('cart',event)" id="btn-cart">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </Span>
+                                    Cart <span id="cart-count"></span>
+                                </button>
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <!-- <div class="nav-btn">
+                        <ul>                        
+                            <li>
+                                <button onclick="buttonAction('login',event)">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                    </Span>
+                                    Login
+                                </button> </li>
+                            <li>
+                                <button  onclick="buttonAction('register',event)">
+                                    <Span class="nav-icon">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </Span>
+                                    Register
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <Span class="nav-icon" onclick="buttonAction('cart',event)" id="btn-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </Span>
+                                    Cart
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div> -->
+                </nav>
+           </header>
+           <!---Header End--> 
+           <!--About us paragraph-->
+           <div class="about-us-main">
+                <div class="about-us-header">
+                    <p>About Us</p>
+                </div>
+                <div class="about-us-para">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et   dolore magna aliqua.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    </p>
+                </div>
+                <div class="about-us-sub-section">
+                    <div class="about-us-head">
+                        <p>Our Products</p>
+                    </div>
+                    <div class="about-us-image-section">
+                        <div class="about-us-image">
+                            <img src="images/pexels-photo-298863.jpeg"/>
+                            <p>Men's Clothing</p>
+                        </div>
+                        <div class="about-us-image">
+                            <img src="images/pexels-photo-7679720.jpeg"/>
+                            <p>Women's Clothing</p>
+    
+                        </div>
+                        <div class="about-us-image">
+                            <img src="images/pexels-photo-1927259.webp"/>
+                            <p>Jwellery</p>
+    
+                        </div>
+                        <div class="about-us-image">
+                            <img src="images/pexels-photo-356056.jpeg"/>
+                            <p>Electronics</p>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+           </div>    
+           
+
+           <footer>
+                <div class="footer">
+                    <p>Made with <i class="fa-solid fa-heart" style="color: red;"></i> by vidya from <a href="https://www.achieversit.com" target="_blank">AchieversIT</a></p>
+                </div>
+           </footer>
+
+        </div>
+    </body>
+</html>
