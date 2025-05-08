@@ -33,14 +33,14 @@
                     <div class="nav-btn">
                         <ul>                        
                             <li>
-                                <button onclick="buttonAction('login',event)" id="btn-login">
+                                <button type="button" onclick="buttonAction('login',event)" id="btn-login">
                                     <Span class="nav-icon">
                                         <i class="fa-solid fa-right-to-bracket"></i>
                                     </Span>
                                     Login
                                 </button> </li>
                             <li>
-                                <button  onclick="buttonAction('register',event)" id="btn-reg">
+                                <button type="button"  onclick="buttonAction('register',event)" id="btn-reg">
                                     <Span class="nav-icon">
                                         <i class="fa-solid fa-user-plus"></i>
                                     </Span>
@@ -48,7 +48,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button onclick="buttonAction('cart',event)" id="btn-cart">
+                                <button  type="button" onclick="buttonAction('cart',event)" id="btn-cart">
                                     <Span class="nav-icon">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </Span>
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="latest-products-btn">
-                    <button onclick="buttonFilter('',event)">All</button>
+                    <button onclick="buttonFilter('All',event)">All</button>
                     <button onclick="buttonFilter(`men's clothing`,event)">Men's Clothing</button>
                     <button onclick="buttonFilter(`women's clothing`, event)">Women's Clothing</button>
                     <button onclick="buttonFilter('jewelery',event)">Jewelery</button>
