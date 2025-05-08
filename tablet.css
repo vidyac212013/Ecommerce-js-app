@@ -1,0 +1,92 @@
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+    }
+    .nav-header {
+        /* flex-direction: column; */
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+    }
+    .nav-list ul{
+       display: grid !important;
+       grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+    }
+     .nav-btn {
+        display: grid !important;
+        grid-template-columns:repeat(1,1fr);
+    /* align-items:end !important; */
+    padding: 0px;
+    margin: 0px;
+
+    }
+    .nav-btn ul {
+       display: grid !important;
+       grid-template-columns: repeat(1,1fr);
+       /* align-items:end !important; */
+       margin: 0px !important;
+       padding: 0px;
+    }
+   /* .nav-btn ul li button{
+        width: 80px;
+        padding: 0px;
+        font-size: 15px;
+    }*/
+    
+    
+    .banner{
+        padding: 0px;
+        margin: 0px;
+        width: 100% !important;
+    }
+    .latest-products-head p{
+        text-align: center;
+        font-size: 2rem !important;
+        padding-top: 40px;
+        margin-bottom: 0px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+   .latest-products-btn{ 
+         display:grid !important;
+         grid-template-columns: repeat(3,1fr);
+         width: 100% !important;
+         margin-top: 30px;
+    }
+    .latest-products-btn button{
+        margin: 10px !important;
+        
+        height: 40px;
+        padding: 0px;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    .latest-products-cart{
+        margin-top: 20px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr);
+        width: 98% !important;
+        border: 1px solid red;
+        padding: 0px !important;
+    }
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90% !important;
+        border: 1px solid blue !important;
+        margin: 10px 5px !important;
+        padding: 0px !important;
+    } 
+    .product-image img{
+        width: 200px !important;
+        border: 1px solid green !important;
+    }
+}
