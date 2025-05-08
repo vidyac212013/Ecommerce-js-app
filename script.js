@@ -32,6 +32,7 @@ function loadProd(){
             products+=`</div>`;
 
             products+=`</div>`;
+            // console.log(products);
             products && (document.getElementsByClassName('latest-products-cart')[0].innerHTML=products);
 
         }) 
@@ -108,23 +109,24 @@ function handleAddToCart(prodId){
     
 }
 function buttonFilter(val,event){
-
+console.log(event)
     const apiservice=async (apiurl)=>{
         const apiresponse=await fetch(apiurl);
         const apiresult=await apiresponse.json();
-        loadProducts(apiresult);
-    
+        loadProducts(apiresult);    
     }
 
     let btnele=document.querySelectorAll('.latest-products-btn button');
     btnele.forEach((el)=>{
-        el.getAttribute('class') && el.setAttribute('class','')});
+        el.getAttribute('class') && el.setAttribute('class','')
+    });
     event.currentTarget.className='active';
-    // console.log(val,products)
-    let productGallery=apiservice(`https://fakestoreapi.com/products/category/${val}`);
-    //console.log(productGallery)
-       // filterProd(val,productGallery);
-}    
-
-
-
+   
+    if(val === 'All'){
+        apiservice(`https://fakestoreapi.com/products`);
+    }
+    else{
+        apiservice(`https://fakestoreapi.com/products/category/${val}`);
+    }
+}
+   

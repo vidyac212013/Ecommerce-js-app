@@ -66,7 +66,7 @@
     
 }
 .nav-btn ul li button{
-    width: 110px;
+    width: 118px;
     height: 40px;
     border-radius: 5px;
     background-color:white;
@@ -312,8 +312,8 @@ textarea{
     font-size: 15px;
 }
 .nav-btn .active{
-    background-color: gray;
-
+    background-color:black;
+    color: white;
 }
 .contact-form-register{
     display: flex;
