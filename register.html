@@ -28,14 +28,14 @@
                     <div class="nav-btn">
                         <ul>                        
                             <li>
-                                <button onclick="buttonAction('login',event)">
+                                <button onclick="buttonAction('login',event)"  id="btn-login">
                                     <Span class="nav-icon">
                                         <i class="fa-solid fa-right-to-bracket"></i>
                                     </Span>
                                     Login
                                 </button> </li>
                             <li>
-                                <button  onclick="buttonAction('register',event)">
+                                <button  onclick="buttonAction('register',event)"  id="btn-reg">
                                     <Span class="nav-icon">
                                         <i class="fa-solid fa-user-plus"></i>
                                     </Span>
@@ -43,11 +43,11 @@
                                 </button>
                             </li>
                             <li>
-                                <button onclick="buttonAction('cart',event)">
+                                <button onclick="buttonAction('cart',event)"  id="btn-cart">
                                     <Span class="nav-icon">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </Span>
-                                    Cart
+                                    Cart<span id="cart-count"></span>
                                 </button>
                             </li>
                         </ul>
