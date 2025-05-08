@@ -1,14 +1,21 @@
+document.addEventListener("DOMContentLoaded",function(){
+    if(window.location.pathname ==="/login.html"){
+    document.getElementById("btn-login").setAttribute('class',"active")
+     cartCount();
+    }
+    if(window.location.pathname ==="/register.html"){
+        document.getElementById("btn-reg").setAttribute('class',"active")
+        cartCount();
+    }
+   
+})
 function buttonAction(value,event){
     window.location.href=`${value}.html`;
-
-    
-    // let navBtn=document.querySelectorAll('.nav-btn button');
-    // navBtn.forEach((ele)=>{
-    //     ele.getAttribute('class') && ele.setAttribute('class','')
-    // })
-    // console.log(event.currentTarget.className='active');
+   
 }
-// if(window.location.pathname ==="/login.html"){
-//     document.getElementById("btn-login").setAttribute('class',"active")
+function cartCount(){
+    const getCartItem=JSON.parse(localStorage.getItem("cartItem"))
+    const cartcount= getCartItem ? getCartItem.reduce((acc,crrVal)=> acc+crrVal.qty, 0) :0;
+    document.getElementById("cart-count").innerHTML=`(${cartcount})` 
     
-//     }
+}
